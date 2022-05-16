@@ -1,8 +1,0 @@
-Query 1: The current month is the dataset is March 2021 however it only had 1 day worth of data and had no brandCode for all entries in that day. Thus, I took Feb 2021 as the most recent month since it had more data. February only had 3 brands present while the others were null. This is something that needs to be addressed. I tried joining to the brands table but the barcodes did not match either. I assume only partnering brands would be in the database so it is common for receipt items to not be tied to a brandcode.
-
-Query 1 is very similar to Query 6 which asks for brand popularity. I assume Query 1 is asking for unique brands within each receipt, while Query 6 asks for the count for each brand within each receipt. Query 1 looks at overall brand popularity preventing users who purchase a large portion from a specific brand to skew the data while Query 6 ignores that and wants to see all transactions for each brand. 
-
-Query 2: For this case, I assume it is comparing how the top 5 brands for the most recent month compare to its performance for the previous month
-
-Many of the queries has null values as the top brand due to many of the entries not having brandCode present. 
-
