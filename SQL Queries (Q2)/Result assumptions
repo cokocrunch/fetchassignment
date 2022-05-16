@@ -4,3 +4,5 @@ Query 1 is very similar to Query 6 which asks for brand popularity. I assume Que
 
 Query 2: For this case, I assume it is comparing how the top 5 brands for the most recent month compare to its performance for the previous month
 
+Many of the queries has null values as the top brand due to many of the entries not having brandCode present. 
+
