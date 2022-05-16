@@ -6,4 +6,4 @@ Fetch Rewards Coding Exercise.
 3. Generate a query to capture data quality issues against the new structured relational data model
 4. Write a short email or Slack message to the business stakeholder
 
-![alt text](C:\Users\NicoWong\Documents\fetch\df_summary.png)
+![Summary of dataframe](https://imgur.com/a/dn2AvAC)
