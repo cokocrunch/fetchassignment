@@ -35,4 +35,10 @@ df = pd.json_normalize(data['result'], record_path=['rewardsReceiptItemList'],me
 #check dataframe quality
 df.info()
 
+#Findings
+'''After running the python code to arrive at the image attached, it is clear that there are several columns with null values in the "Receipt Items" Table. This may cause problems especially during SQL querying. The first SQL query asked for the top 5 brands by receipts scanned for the most recent month; The image below shows that brandCode has 2600 non-null, meaning over 4000 entries are null. This would skew the query results possibly leading to nulls being the top brand for the month. 
 
+I tried tieing finding a connection to the "brand" table with a brand ID but that was not present in the "Receipt Items" Table. Barcode and brand Code column were not helpful in creating the connection as well. 
+
+I strongly suggest to add a brand id to each item that is purchased within the receipt items so it can be tied back to the actual brand information. 
+'''
